@@ -1,0 +1,37 @@
+.main {
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+}
+
+.title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--black);
+}
+
+.createButton {
+  margin-top: 40px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--firm);
+  width: 216px;
+  height: 44px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: var(--firm);
+  background-color: var(--white);
+  cursor: pointer;
+
+  img {
+    margin-right: 10px;
+  }
+}

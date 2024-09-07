@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+  --font-family: "Open Sans";
+  --green: #34c759;
+	--orange: #e6b127;
+	--red: #F06A4D;
+	--firm: #9873ff;
+	--gray: #c8c5d1;
+	--txt-gray: #b0b0b0;
+	--black: #333;
+  --white: #FFF;
+  --back: #F5F5F5;
+  --shadow: 0 3px 6px 0 rgba(176, 190, 197, 0.32), 0 9px 27px 0 rgba(176, 190, 197, 0.32);
+  --border: hsla(255, 12%, 80%, 0.5);
+  --add_contact: rgba(200, 197, 209, 0.3);
+  --option: #f4f3f6;
+}
+
+[data-theme="dark"] {
+  --green: #28a745;
+  --orange: #d69e2e;
+  --red: #F06A4D;
+  --firm: #a77ff0;
+  --gray: rgb(108, 117, 125);
+  --txt-gray: #adb5bd;
+  --black: #f8f9fa;
+  --white: #232527;
+  --back: rgb(29, 37, 57);
+  --shadow: 0 3px 6px 0 rgba(15, 20, 22, 0.32), 0 9px 27px 0 rgba(3, 3, 4, 0.32);
+  --border: rgb(108, 117, 125, 0.2);
+  --add_contact: rgba(108, 117, 125, 0.3);
+  --option: rgb(29, 37, 57);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--back);
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}

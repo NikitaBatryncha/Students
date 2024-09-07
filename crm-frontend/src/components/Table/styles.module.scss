@@ -1,0 +1,154 @@
+.table {
+  width: 100%;
+  color: var(--gray);
+  border-collapse: collapse;
+
+  &__title {
+    text-align: start;
+    font-weight: 400;
+    font-size: 12px;
+
+    &Wrapper {
+      position: relative;
+      cursor: pointer;
+    }
+
+    &_idWrapper {
+      max-width: 62px;
+      width: 100%;
+      height: 40px;
+    }
+
+    &_nameWrapper {
+      max-width: 201px;
+      width: 100%;
+      height: 40px;
+    }
+
+    &_creationWrapper {
+      max-width: 128px;
+      width: 100%;
+      height: 40px;
+    }
+
+    &_changesWrapper {
+      max-width: 128px;
+      width: 100%;
+      height: 40px;
+    }
+
+    &_contactsWrapper {
+      max-width: 108px;
+      width: 100%;
+      height: 40px;
+    }
+
+    &_actionsWrapper {
+      max-width: 189px;
+      width: 100%;
+      height: 40px;
+    }
+
+    &_id {
+      position: absolute;
+      display: flex;
+      top: 16px;
+      left: 20px;
+
+      &::after {
+        content: "";
+        display: block;
+        margin-top: 3px;
+        margin-left: 1px;
+        width: 12px;
+        height: 12px;
+        background-image: url(../../../public/arrow_downward.svg);
+      }
+    }
+
+    &_name {
+      position: absolute;
+      display: flex;
+      top: 16px;
+      left: -6px;
+
+      &::after {
+        content: "А-Я";
+        display: flex;
+        align-items: center;
+        padding-left: 12px;
+        margin-top: 3px;
+        margin-left: 1px;
+        width: 36px;
+        height: 12px;
+        background-image: url(../../../public/arrow_downward.svg);
+        background-repeat: no-repeat;
+        font-weight: 600;
+        font-size: 10px;
+        color: var(--firm);
+      }
+    }
+
+    &_creation {
+      position: absolute;
+      width: 100px;
+      height: 35px;
+      line-height: 104%;
+      top: 3px;
+      left: -7px;
+
+      img {
+        margin-top: 2px;
+        margin-left: 1px;
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    &_changes {
+      position: absolute;
+      width: 100px;
+      left: -11px;
+      line-height: 104%;
+      top: 3px;
+
+      img {
+        margin-top: 2px;
+        margin-left: 1px;
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    &_contacts {
+      position: absolute;
+      display: flex;
+      top: 16px;
+      left: -27px;
+    }
+
+    &_actions {
+      position: absolute;
+      display: flex;
+      top: 16px;
+      left: -18px;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+  }
+
+}
+
+.white {
+  background-color: var(--white);
+}
+
+.thead {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

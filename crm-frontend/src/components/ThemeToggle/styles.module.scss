@@ -1,0 +1,45 @@
+.themetoggle {
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  visibility: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    background-image: url(../../../public/light_mode_regular.svg);
+    background-size: contain;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    background-image: url(../../../public/light_mode_bold.svg);
+    background-size: contain;
+    border-radius: 100%;
+  }
+
+  &:checked::after {
+    background-image: url(../../../public/dark_mode_regular.svg);
+
+  }
+
+  &:checked:hover::after {
+    background-image: url(../../../public/dark_mode_bold.svg);
+  }
+}
